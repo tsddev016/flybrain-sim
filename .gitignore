@@ -1,0 +1,10 @@
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+data/user_settings.json
+data/registro.txt
+data/ultimo_erro.txt
+*.log
+.DS_Store
+Thumbs.db

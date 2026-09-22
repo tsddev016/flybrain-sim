@@ -1,43 +1,35 @@
 # FlyBrain Simulator 2D
 
-Simulador experimental de moscas artificiais com sensores limitados, memoria, motivacao, acasalamento, ninhos, ovos e predadores (aranhas).
+**TSZIN DEV** — simulador de moscas artificiais.
 
-## Como executar
+## Estrutura
 
-### Windows (recomendado)
-
-1. Extraia o projeto.
-2. Execute **INSTALAR.bat** uma vez (instala dependencias e cria atalho).
-3. Abra pelo atalho **FlyBrain Simulator** na area de trabalho.
-
-### Manual
-
-```bash
-pip install -r requirements.txt
-python main.py
+```
+FlyBrain/
+├── launch/          # instalador e atalhos Windows
+├── src/flybrain/    # codigo do jogo
+│   ├── agents/
+│   ├── simulation/
+│   ├── learning/
+│   ├── ui/
+│   └── assets/
+├── data/
+├── requirements.txt
+└── README.md
 ```
 
-## Controles
+## Windows
 
-| Tecla | Acao |
-|-------|------|
-| SPACE | Pausar / continuar |
-| R | Reiniciar moscas |
-| D | Liga/desliga raios de sensores |
-| TAB | Alternar painel entre as moscas |
-| + / - | Velocidade da simulacao |
-| ESC / Q | Sair |
+1. Extraia o ZIP completo (FlyBrain.zip)
+2. Execute `launch\\INSTALAR.bat`
+3. Abra pelo atalho ou `launch\\FlyBrain.bat`
 
-## Recursos
-
-- Mapa amplo com paredes, comida, agua e pedras
-- Moscas macho e femea (sprites distintos)
-- Sono em ninhos quando a fadiga sobe
-- Acasalamento e ovos (eclodem em novas moscas)
-- Aranhas com fome, sede, energia, caca, ninhos e ovos
-- Sons procedurais de insetos e eventos
-- Interface em portugues
+```bat
+cd FlyBrain
+set PYTHONPATH=src
+python -m flybrain.main
+```
 
 ## Licenca
 
-Projeto experimental educacional.
+Projeto experimental — TSZIN DEV.
