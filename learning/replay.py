@@ -1,13 +1,9 @@
-"""
-Simple experience replay buffer (for Level 2+).
-"""
-
+"""Simple experience replay buffer (for Level 2+)."""
 from __future__ import annotations
 from collections import deque
 from dataclasses import dataclass
-from typing import Deque, List, Optional
+from typing import Deque, List
 import random
-
 
 @dataclass
 class Transition:
@@ -16,7 +12,6 @@ class Transition:
     reward: float
     next_sensors: dict
     done: bool
-
 
 class ReplayBuffer:
     def __init__(self, capacity: int = 10_000):
