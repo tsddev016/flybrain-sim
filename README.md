@@ -1,35 +1,23 @@
 # FlyBrain Simulator 2D
 
-**TSZIN DEV** — simulador de moscas artificiais.
+**TSZIN DEV**
 
-## Estrutura
+## Site
+
+Pasta `docs/` = GitHub Pages.
+
+1. Settings → Pages → Source: `main` / `/docs`
+2. Visibility → Public (se quiser público)
+3. URL: https://tsddev016.github.io/flybrain-sim/
+
+## Jogo
 
 ```
-FlyBrain/
-├── launch/          # instalador e atalhos Windows
-├── src/flybrain/    # codigo do jogo
-│   ├── agents/
-│   ├── simulation/
-│   ├── learning/
-│   ├── ui/
-│   └── assets/
-├── data/
-├── requirements.txt
-└── README.md
+launch/INSTALAR.bat
+launch/FlyBrain.bat
 ```
-
-## Windows
-
-1. Extraia o ZIP completo (FlyBrain.zip)
-2. Execute `launch\\INSTALAR.bat`
-3. Abra pelo atalho ou `launch\\FlyBrain.bat`
 
 ```bat
-cd FlyBrain
 set PYTHONPATH=src
 python -m flybrain.main
 ```
-
-## Licenca
-
-Projeto experimental — TSZIN DEV.

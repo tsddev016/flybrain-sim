@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>FlyBrain Simulator — TSZIN DEV</title>
+  <meta name="description" content="Simulador 2D de moscas artificiais. TSZIN DEV." />
+  <style>
+    :root { --bg:#0b0e14; --card:#141a24; --text:#e8eef5; --muted:#9aa8b8; --accent:#3ecf8e; --accent2:#4db8ff; }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: system-ui, sans-serif; background: var(--bg); color: var(--text); line-height: 1.6; }
+    .wrap { max-width: 920px; margin: 0 auto; padding: 2rem 1.25rem 4rem; }
+    header { text-align: center; padding: 2.5rem 0 1.5rem; }
+    .badge { display: inline-block; font-size: 0.75rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--accent); border: 1px solid var(--accent); border-radius: 999px; padding: 0.25rem 0.75rem; margin-bottom: 1rem; }
+    h1 { font-size: clamp(1.8rem, 5vw, 2.6rem); }
+    h1 span { color: var(--accent); }
+    .sub { color: var(--muted); margin-top: 0.5rem; }
+    .actions { display: flex; flex-wrap: wrap; gap: 0.75rem; justify-content: center; margin: 1.5rem 0 2.5rem; }
+    a.btn { display: inline-block; padding: 0.75rem 1.35rem; border-radius: 10px; text-decoration: none; font-weight: 600; }
+    a.btn-primary { background: var(--accent); color: #0b0e14; }
+    a.btn-secondary { background: #243044; color: var(--text); border: 1px solid #334155; }
+    h2 { font-size: 1.25rem; margin: 1.5rem 0 0.75rem; color: var(--accent2); }
+    p, li { color: var(--muted); }
+    ul, ol { padding-left: 1.25rem; }
+    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem; }
+    .card { background: var(--card); border: 1px solid #243044; border-radius: 12px; padding: 1.1rem; }
+    .card h3 { color: var(--text); font-size: 0.95rem; margin-bottom: 0.35rem; }
+    code { background: #1a2230; padding: 0.15rem 0.4rem; border-radius: 4px; color: var(--accent); }
+    pre { background: #0f141c; border: 1px solid #243044; border-radius: 10px; padding: 1rem; overflow-x: auto; font-size: 0.8rem; color: #c8d4e0; margin-top: 0.75rem; }
+    footer { text-align: center; color: var(--muted); font-size: 0.85rem; margin-top: 3rem; padding-top: 1.5rem; border-top: 1px solid #1e2836; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="badge">TSZIN DEV</div>
+      <h1>Fly<span>Brain</span> Simulator</h1>
+      <p class="sub">Moscas artificiais · sensores · predadores · ninhos e ovos</p>
+    </header>
+    <div class="actions">
+      <a class="btn btn-primary" href="https://github.com/tsddev016/flybrain-sim">Código no GitHub</a>
+      <a class="btn btn-secondary" href="https://github.com/tsddev016/flybrain-sim#readme">Como instalar</a>
+    </div>
+    <h2>O que é</h2>
+    <p>Laboratório 2D onde moscas virtuais recebem estímulos (cheiro, distância, paredes, medo) e decidem sozinhas. Aranhas caçam e desistem. Ovos e ninhos fecham o ciclo.</p>
+    <h2>Como rodar</h2>
+    <ol>
+      <li>Baixe o ZIP do repositório</li>
+      <li>Extraia a pasta <code>FlyBrain</code></li>
+      <li>Execute <code>launch\\INSTALAR.bat</code></li>
+      <li>Abra <code>launch\\FlyBrain.bat</code></li>
+    </ol>
+    <pre>cd FlyBrain
+set PYTHONPATH=src
+python -m flybrain.main</pre>
+    <footer>Desenvolvido por <strong style="color:var(--accent)">TSZIN DEV</strong></footer>
+  </div>
+</body>
+</html>
